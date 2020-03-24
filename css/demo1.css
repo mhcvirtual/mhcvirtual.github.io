@@ -103,7 +103,7 @@ a:focus {
 
     .content p {
 	max-width: 80vw;
-	font-size: 2.8em;
+	font-size: 3em;
 	text-transform: uppercase;
 	color: var(--color-content);
 	font-family: var(--font-alt);
