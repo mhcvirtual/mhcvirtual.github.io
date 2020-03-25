@@ -14,15 +14,7 @@
 		<link rel="stylesheet" href="https://use.typekit.net/gdg8keg.css">
 		<!--<link rel="stylesheet" type="text/css" href="css/demo1.css" />-->
         <link rel="stylesheet" type="text/css" href="dist/demo1.9862d1f2.css" />
-		<script>document.documentElement.className = "js";
-
-var supportsCssVars = function supportsCssVars() {
-  var e,
-      t = document.createElement("style");
-  return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e;
-};
-
-supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
 	</head>
 	<body>
 		<main>
@@ -39,14 +31,16 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 		</main>
 		<svg class="cursor" width="220" height="220" viewBox="0 0 220 220">
 			<defs>
-				<filter id="filter-1" x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox">
-					<feTurbulence type="fractalNoise" baseFrequency="0" numOctaves="1" result="warp"></feTurbulence>
-					<feOffset dx="-30" result="warpOffset"></feOffset>
-					<feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="30" in="SourceGraphic" in2="warpOffset"></feDisplacementMap>
+				<filter id="filter-1" x="-50%" y="-50%" width="200%" height="200%"
+				filterUnits="objectBoundingBox">
+					<feTurbulence type="fractalNoise" baseFrequency="0" numOctaves="1" result="warp" />
+					<feOffset dx="-30" result="warpOffset" />
+					<feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="30" in="SourceGraphic" in2="warpOffset" />
 				</filter>
 			</defs>
-			<circle class="cursor__inner" cx="110" cy="110" r="60"></circle>
+			<circle class="cursor__inner" cx="110" cy="110" r="60"/>
 		</svg>
-		<script src="dist/js.3e720bb9.js"></script>
+		<!--<script src="js/index.js"></script>-->
+        <script src="dist/js.3e720bb9.js">
 	</body>
 </html>
