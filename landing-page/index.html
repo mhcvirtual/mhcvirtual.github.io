@@ -27,11 +27,30 @@
 
         </script>
 
+        <script>
+
+            window.onload = randomImg;
+
+            var museumImages = new Array("images/banner.jpg","images/banner1.jpg","images/banner2.jpg","images/banner3.jpg");
+
+            function randomImg() {
+            var randomNum = Math.floor(Math.random() * 4) + 0;
+            document.getElementById("randomize").src = museumImages[randomNum];
+            }
+        </script>
+
 	</head>
     <style>
         .set-svg {
             width: auto;
             height: 13vh;
+        }
+
+        #randomize {
+            border: 0;
+            display: inline-block;
+            position: relative;
+            float: right;
         }
     </style>
 	<body class="is-preload">
@@ -49,7 +68,7 @@
 							</ul>
 						</div>
 						<div class="image">
-							<img src="images/banner.jpg" alt="" />
+                            <img src="images/banner.jpg" id="randomize">
 						</div>
 					</section>
 
