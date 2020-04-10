@@ -23,7 +23,12 @@
                 return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e;
             };
 
-            supportsCssVars() || alert("Para uma melhor experiência, por favor, atualize seu navegador para um que suporte as tecnologias utilizadas por este site.");
+            if (window.confirm('Para uma melhor experiência, por favor, atualize seu navegador para um que suporte as tecnologias utilizadas por este site. Clique "Ok" para baixar o Google Chrome (recomendado) ou clique em "Cancelar" para continuar para o site msmo assim.'))
+            {
+                window.location.href='https://www.google.com/intl/pt-BR/chrome/';
+            };
+
+                //supportsCssVars() || alert("Para uma melhor experiência, por favor, atualize seu navegador para um que suporte as tecnologias utilizadas por este site.");
 
         </script>
 
