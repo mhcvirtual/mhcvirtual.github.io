@@ -242,7 +242,30 @@ input, select, textarea {
     letter-spacing: inherit;
     line-height: 6vh;
     color: #561118;
+    }
+
+@media (min-width: 635px) {
+    h2.set-font {
+    font-family: "Playfair Display", Times New Roman, serif;
+    font-size: auto;
+    font-weight: 900;
+    letter-spacing: inherit;
+    line-height: 10vh;
+    color: #561118;
+    }
 }
+
+@media (min-width: 920px) {
+    h2.set-font {
+    font-family: "Playfair Display", Times New Roman, serif;
+    font-size: auto;
+    font-weight: 900;
+    letter-spacing: inherit;
+    line-height: 10vh;
+    color: #561118;
+    }
+}
+
 
 	h3 {
 		font-size: 1.5rem;
